@@ -1,0 +1,60 @@
+<ion-app>
+  <ion-split-pane contentId="main-content" when="(max-width: 0px)">
+    <ion-menu (ionWillOpen)="ionWillOpen()" (ionDidClose)="ionDidClose()" contentId="main-content" type="overlay">
+      <ion-content appScrollTheme>
+        <ion-list id="inbox-list">
+          <ion-item>
+            <img class="system_logo" [src]="getSystemInfo().SYSTEM_LOGO" />
+            <ion-list-header>{{ getSystemInfo().SYSTEM_NICKNAME | translate }}</ion-list-header>
+          </ion-item>
+          <br />
+          <ion-note>{{ 'app.menu-preferences' | translate }}</ion-note>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+              routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-outline'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <ion-list id="labels-list">
+          <ion-list-header>Preferências</ion-list-header>
+          <ion-item lines="none" (ionChange)="toggleThemes($event)">
+            <ion-icon slot="start" name="moon-outline"></ion-icon>
+            <ion-label> Dark Theme </ion-label>
+            <ion-toggle [checked]="isDarkTheme" id="themeToggle" slot="end"></ion-toggle>
+          </ion-item>
+        </ion-list>
+        <p-dropdown [options]="countries" [(ngModel)]="selectedCountry" optionLabel="name" 
+        [placeholder]="'app.select-language' | translate" (onChange)="changeLanguage()">
+          <ng-template pTemplate="selectedItem">
+            <div class="country-item country-item-value" *ngIf="selectedCountry">
+              <img src="assets/imgs/flags/flag_placeholder.png"
+                [class]="'flag flag-' + selectedCountry.code.toLowerCase()" />
+              <div class="ml-2">{{selectedCountry.name}}</div>
+            </div>
+          </ng-template>
+          <ng-template let-country pTemplate="item">
+            <div class="country-item">
+              <img src="assets/imgs/flags/flag_placeholder.png"
+                [class]="'flag flag-' + country.code.toLowerCase()" />
+              <div class="ml-2">{{country.name}}</div>
+            </div>
+          </ng-template>
+        </p-dropdown>
+        <div *ngIf="loaderService.isLoading | async" class="loader-bar-container">
+          <p-progressBar mode="indeterminate"></p-progressBar>
+        </div>
+      </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet id="main-content">
+      <div *ngIf="loaderService.isLoading | async" class="loader-spinnner-container">
+        <p-progressSpinner [style]="{ width: '100px', height: '100px' }"></p-progressSpinner>
+      </div>
+
+    </ion-router-outlet>
+
+  </ion-split-pane>
+</ion-app>
+<p-toast key="main" position="top-right"> </p-toast>

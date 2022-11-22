@@ -1,0 +1,107 @@
+[
+    {
+        "tecnologia": "Java",
+        "title": "home.java-title",
+        "description": "home.java-description",
+        "icon": "java",
+        "icon_type": "fab"
+    },
+    {
+        "tecnologia": "Node",
+        "title": "home.node-title",
+        "description": "home.node-description",
+        "icon": "node",
+        "icon_type": "fab"
+    },
+    {
+        "tecnologia": "Frontend Web",
+        "title": "home.frontend-web-title",
+        "description": "home.frontend-web-description",
+        "icon": "angular",
+        "icon_type": "fab"
+    },
+    {
+        "tecnologia": "Frontend Mobile",
+        "title": "home.frontend-mobile-title",
+        "description": "home.frontend-mobile-description",
+        "icon": "mobile",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "Autenticação e Autorização",
+        "title": "home.auth-title",
+        "description": "home.auth-description",
+        "icon": "building-shield",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "Design Pattern",
+        "title": "home.design-pattern-title",
+        "description": "home.design-pattern-description",
+        "icon": "ruler",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "Background Jobs",
+        "title": "home.background-jobs-title",
+        "description": "home.background-jobs-description",
+        "icon": "bullseye",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "Scheduled Jobs",
+        "title": "home.scheduled-task-title",
+        "description": "home.scheduled-task-description",
+        "icon": "calendar-check",
+        "icon_type": "far"
+    },
+    {
+        "tecnologia": "Realtime Updates",
+        "title": "home.web-socket-title",
+        "description": "home.web-socket-description",
+        "icon": "rotate",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "Funções Nativas",
+        "title": "home.native-functions-title",
+        "description": "home.native-functions-description",
+        "icon": "camera",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "I18-Next",
+        "title": "home.languages-title",
+        "description": "home.languages-description",
+        "icon": "language",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "PrimeNG",
+        "title": "home.primeng-title",
+        "description": "home.primeng-description",
+        "icon": "sketch",
+        "icon_type": "fab"
+    },
+    {
+        "tecnologia": "Git",
+        "title": "home.github-title",
+        "description": "home.github-description",
+        "icon": "github",
+        "icon_type": "fab"
+    },
+    {
+        "tecnologia": "RPA",
+        "title": "home.rpa-title",
+        "description": "home.rpa-description",
+        "icon": "robot",
+        "icon_type": "fas"
+    },
+    {
+        "tecnologia": "Metodologia ágil",
+        "title": "home.agile-title",
+        "description": "home.agile-description",
+        "icon": "rocket",
+        "icon_type": "fas"
+    }
+]

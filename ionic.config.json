@@ -1,0 +1,8 @@
+{
+  "name": "com.maestroapps.gtl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
+

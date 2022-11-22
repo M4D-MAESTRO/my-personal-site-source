@@ -1,0 +1,413 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content appScrollTheme>
+
+
+  <div class="grid grid-nogutter surface-section text-800">
+    <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
+      <section>
+        <span class="block text-6xl font-bold mb-1">{{ 'home.title-welcome' | translate }}!</span>
+        <div class="text-6xl text-primary font-bold mb-3">{{ 'home.subtitle-welcome' | translate }}.</div>
+        <p class="mt-0 mb-4 text-700 line-height-3">{{ 'home.title-description' | translate }}.</p>
+
+        <button pButton pRipple label="Learn More" type="button" class="mr-3 p-button-raised text-white"></button>
+        <button pButton pRipple label="Live Demo" type="button" class="p-button-outlined"></button>
+      </section>
+    </div>
+    <div class="col-12 md:col-6 overflow-hidden">
+      <img src="{{ heroImg }}" alt="Image" class="md:ml-auto block md:h-full"
+        style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
+    </div>
+  </div>
+
+  <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="text-center">
+      <div class="mb-3 font-bold text-4xl">
+        <span class="text-900">{{ 'home.develop-primary' | translate }}, </span>
+        <span class="text-primary">{{ 'home.develop-secondary' | translate }}.</span>
+      </div>
+      <div class="text-700 text-sm mb-6">{{ 'home.develop-description' | translate }}.</div>
+      <div class="grid">
+        <div *ngFor="let s of skills" class="col-12 md:col-4 mb-4 px-5">
+          <span class="p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px">
+            <fa-icon class="text-4xl text-primary" style="font-size: 20px;" [icon]="[s.icon_type, s.icon]">
+            </fa-icon>
+          </span>
+          <div class="text-900 mb-3 font-medium">{{ s.title | translate }}.</div>
+          <span class="text-700 text-sm line-height-3">{{ s.description | translate }}.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="surface-section px-4 pb-8 md:px-6 lg:px-8">
+    <div class="p-6 shadow-2 flex flex-column md:flex-row align-items-center justify-content-between"
+      style="border-radius: 1rem; background: linear-gradient(0deg, var(--gradient-begin), var(--gradient-middle)), linear-gradient(92.54deg, var(--gradient-ending) 47.88%, #FFFFFF 100.01%)">
+      <div class="pr-6">
+        <div class="text-blue-100 font-medium text-xl mb-3">{{ 'home.enpower-banner-subtitle' | translate }}</div>
+        <div class=" font-medium text-5xl">{{ 'home.enpower-banner-title' | translate }}</div>
+      </div>
+      <div class="mt-4 mr-auto md:mt-0 md:mr-0">
+        <button pButton pRipple label="{{ 'home.enpower-banner-button' | translate }}"
+          class="font-bold px-5 py-3 p-button-warning p-button-rounded p-button-raised white-space-nowrap"></button>
+      </div>
+    </div>
+  </div>
+  <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+    <div>
+      <div class="text-900 font-bold text-4xl line-height-3 mb-3 text-center">{{ 'home.roadmap-about-title' | translate }}</div>
+      <p class="text-600 line-height-3 text-lg m-0 mb-6 text-center">{{ 'home.roadmap-about-description' | translate }}.</p>
+
+      <div class="grid surface-card shadow-2  text-center" style="border-radius: 10px">
+        <div class="col-12 md:col-4 px-5 py-5">
+          <fa-icon class="text-4xl text-primary mb-3" [icon]="['fas', 'graduation-cap']"></fa-icon>
+            <div class="text-900 font-bold text-4xl mb-3 line-height-3">{{ 'home.roadmap-graduate-title' | translate
+              }}</div>
+            <p class="text-700 m-0">{{ 'home.roadmap-graduate-description' | translate }}</p>
+        </div>
+        <div class="col-12 md:col-4 px-5 py-5">
+          <fa-icon class="text-4xl text-primary mb-3" [icon]="['fas', 'cloud']"></fa-icon>
+            <div class="text-900 font-bold text-4xl mb-3 line-height-3">{{ 'home.roadmap-specialist-title' | translate
+              }}</div>
+            <p class="text-700 m-0">{{ 'home.roadmap-specialist-description' | translate }}</p>
+        </div>
+        <div class="col-12 md:col-4 px-5 py-5">
+          <fa-icon class="text-4xl text-primary mb-3" [icon]="['fas', '3']"></fa-icon>
+            <div class="text-900 font-bold text-4xl mb-3 line-height-3">{{ 'home.roadmap-experience-title' | translate
+              }}</div>
+            <p class="text-700 m-0">{{ 'home.roadmap-experience-description' | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div>
+      <div class="text-900 mb-3 font-bold text-4xl text-center">TODO</div>
+      <div class="text-600 mb-6 line-height-3 text-xl text-center">Colocar alguns certificados e reconhecimentos.</div>
+
+      <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/alfred-500.svg" alt="Image">
+          </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/hyper-500.svg" alt="Image">
+          </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/bastion-500.svg" alt="Image">
+          </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/peak-500.svg" alt="Image">
+          </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/charot-500.svg" alt="Image">
+          </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/shodan-500.svg" alt="Image">
+          </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/hodly-500.svg" alt="Image">
+          </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+          <div class="flex align-items-center justify-content-center p-3">
+            <img src="assets/images/blocks/logos/franki-500.svg" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+    <div>
+      <div class="font-bold text-4xl text-900 mb-5 text-center">Featured Articles</div>
+      <div class="grid nogutter">
+        <div class="col-12 lg:col-4 p-3">
+          <div class="shadow-2 border-round h-full surface-card">
+            <img src="assets/images/blocks/blog/blog-1.jpg" alt="Image" class="block w-full border-round-top">
+            <div class="p-4">
+              <span class="block font-medium text-blue-600 mb-3">Crime</span>
+              <div class="text-xl text-900 font-medium mb-3 line-height-3 ">Fugitive flamingo spotted in Florida</div>
+              <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="flex">
+                <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" shape="circle"></p-avatar>
+                <div class="ml-2">
+                  <div class="text-xs font-bold text-900 mb-1">Anna Lane</div>
+                  <div class="text-xs flex align-items-center text-700">
+                    <i class="pi pi-calendar mr-1 text-xs"></i>
+                    <span>Apr 5, 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 lg:col-4 p-3">
+          <div class="shadow-2 border-round h-full surface-card">
+            <img src="assets/images/blocks/blog/blog-2.jpg" alt="Image" class="block w-full border-round-top">
+            <div class="p-4 flex flex-column">
+              <span class="block font-medium text-blue-600 mb-3">Wildlife</span>
+              <div class="text-xl text-900 font-medium mb-3 line-height-3 ">Journey to the Ends of the Earth</div>
+              <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="flex">
+                <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" shape="circle"></p-avatar>
+                <div class="ml-2">
+                  <div class="text-xs font-bold text-900 mb-1">Arlene McCoy</div>
+                  <div class="text-xs flex align-items-center text-700">
+                    <i class="pi pi-calendar mr-1 text-xs"></i>
+                    <span>Apr 6, 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 lg:col-4 p-3">
+          <div class="shadow-2 border-round h-full surface-card">
+            <img src="assets/images/blocks/blog/blog-3.jpg" alt="Image" class="block w-full border-round-top">
+            <div class="p-4">
+              <span class="block font-medium text-blue-600 mb-3">Marie</span>
+              <div class="text-xl text-900 font-medium mb-3 line-height-3 ">'Real and imminent' extinction risk</div>
+              <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="flex">
+                <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" shape="circle"></p-avatar>
+                <div class="ml-2">
+                  <div class="text-xs font-bold text-900 mb-1">Diane Miles</div>
+                  <div class="text-xs flex align-items-center text-700">
+                    <i class="pi pi-calendar mr-1 text-xs"></i>
+                    <span>Apr 9, 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div>
+      <div class="text-blue-600 text-2xl mb-4 text-center">Save up to 25% today</div>
+      <div class="text-900 font-bold text-4xl text-center mb-4">Pricing Plans</div>
+      <div class="flex align-items-center justify-content-center text-900">
+        <span class="font-semibold mr-3">Monthly</span>
+        <p-inputSwitch></p-inputSwitch>
+        <span class="ml-3">Yearly</span>
+      </div>
+
+      <div class="flex flex-column md:flex-row mt-6">
+        <div class="mb-6 md:mb-0 mr-0 md:mr-4 flex flex-column flex-grow-1">
+          <div class="bg-bluegray-100 text-center p-3" style="border-radius: 6px 6px 0 0">
+            <div class="text-2xl font-bold text-bluegray-900 mb-3">Basic</div>
+            <div class="flex align-items-center justify-content-center">
+              <span class="font-bold text-bluegray-900 text-5xl mr-2">10$</span>
+              <span class="text-2xl text-bluegray-400"> / month</span>
+            </div>
+          </div>
+          <div class="bg-bluegray-50 p-4 flex flex-column flex-grow-1"
+            style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
+            <div class="text-bluegray-500 font-bold line-height-3 mb-4">Ut enim ad minim veniam, quis nostrud
+              exercitation.</div>
+            <ul class="list-none p-0 m-0 mb-5 text-bluegray-600">
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Arcu vitae elementum</span>
+              </li>
+              <li class="flex align-items-center">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Dui faucibus in ornare</span>
+              </li>
+            </ul>
+
+            <button pButton pRipple class="p-button-secondary w-full mt-auto" label="Try Free"></button>
+          </div>
+        </div>
+
+        <div class="mb-6 md:mb-0 mr-0 md:mr-4 flex flex-column flex-grow-1">
+          <div class="bg-bluegray-800 text-center p-3 border-3 border-green-500 border-bottom-none"
+            style="border-radius: 6px 6px 0 0">
+            <div class="bg-green-500 text-0 font-bold text-sm inline-block p-2 mb-3" style="border-radius: 20px">MOST
+              POPULAR</div>
+            <div class="text-2xl font-bold  mb-3">Premium</div>
+            <div class="flex align-items-center justify-content-center">
+              <span class="font-bold  text-5xl mr-2">20$</span>
+              <span class="text-2xl text-bluegray-400"> / month</span>
+            </div>
+          </div>
+          <div class="bg-bluegray-900 p-4 flex flex-column flex-grow-1 border-3 border-green-500 border-top-none"
+            style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
+            <div class="text-bluegray-400 font-bold line-height-3 mb-4">Ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</div>
+            <ul class="list-none p-0 m-0 mb-5 text-bluegray-100">
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Arcu vitae elementum</span>
+              </li>
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Dui faucibus in ornare</span>
+              </li>
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Morbi tincidunt augue</span>
+              </li>
+              <li class="flex align-items-center">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Duis ultricies lacus sed</span>
+              </li>
+            </ul>
+
+            <button pButton pRipple class="p-button-success w-full mt-auto" label="Buy Now"></button>
+          </div>
+        </div>
+
+        <div class="mb-6 md:mb-0 flex flex-column flex-grow-1">
+          <div class="bg-blue-800 text-center p-3" style="border-radius: 6px 6px 0 0">
+            <div class="text-2xl font-bold  mb-3">Enterprise</div>
+            <div class="flex align-items-center justify-content-center">
+              <span class="font-bold  text-5xl mr-2">30$</span>
+              <span class="text-2xl text-blue-400"> / month</span>
+            </div>
+          </div>
+          <div class="bg-blue-900 p-4 flex flex-column flex-grow-1"
+            style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
+            <div class="text-blue-400 font-bold line-height-3 mb-4">Duis aute irure dolor in reprehenderit in
+              voluptate
+              velit.</div>
+            <ul class="list-none p-0 m-0 mb-5 text-blue-100">
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Arcu vitae elementum</span>
+              </li>
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Dui faucibus in ornare</span>
+              </li>
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Morbi tincidunt augue</span>
+              </li>
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Duis ultricies lacus sed</span>
+              </li>
+              <li class="flex align-items-center mb-3">
+                <i class="pi pi-circle-on mr-2 text-sm"></i>
+                <span>Imperdiet proin</span>
+              </li>
+            </ul>
+
+            <button pButton pRipple class="p-button-outlined w-full mt-auto" label="Contact Us"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="surface-ground">
+    <div class="grid grid-nogutter">
+      <div class="col-12 md:col-6 bg-no-repeat bg-cover p-8"
+        style="background-image: url('assets/images/blocks/contact/contact-2.jpg')">
+        <div class=" text-2xl font-medium mb-6">Contact Us</div>
+        <div class="text-gray-300 line-height-3 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+        <a class="inline-flex align-items-center text-blue-300 font-bold no-underline cursor-pointer">
+          <span class="mr-3">View Address on Google Maps</span>
+          <i class="pi pi-arrow-right"></i>
+        </a>
+        <ul class="list-none p-0 m-0 mt-6 ">
+          <li class="flex align-items-center mb-3">
+            <i class="pi pi-phone mr-2"></i>
+            <span>+123456789</span>
+          </li>
+          <li class="flex align-items-center mb-3">
+            <i class="pi pi-twitter mr-2"></i>
+            <span>@prime_ng</span>
+          </li>
+          <li class="flex align-items-center">
+            <i class="pi pi-inbox mr-2"></i>
+            <span>contact@primetek.com.tr</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="p-fluid formgrid grid px-4 py-8 md:px-6 lg:px-8">
+          <div class="field col-12 lg:col-6 p-float-label mb-4">
+            <input id="firstname" type="text" class="py-3 px-2 text-lg" pInputText placeholder="First Name">
+          </div>
+          <div class="field col-12 lg:col-6 p-float-label mb-4">
+            <input id="lastname" type="text" class="py-3 px-2 text-lg" pInputText placeholder="Last Name">
+          </div>
+          <div class="field col-12 mb-4">
+            <input id="email" type="text" pInputText class="py-3 px-2 text-lg" placeholder="Email">
+          </div>
+          <div class="field col-12 mb-4">
+            <input id="email" type="text" pInputText class="py-3 px-2 text-lg" placeholder="Phone">
+          </div>
+          <div class="field col-12 mb-4">
+            <textarea id="message" pInputTextarea rows="3" [autoResize]="true" class="py-3 px-2 text-lg"
+              placeholder="Message"></textarea>
+          </div>
+          <div class="col-12 text-right">
+            <button type="button" pButton pRipple label="Submit" icon="pi pi-envelope"
+              class="px-5 py-3 w-auto"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
+    <div class="bg-gray-900">
+      <div class="grid">
+        <div class="col-12 md:col-3 flex flex-wrap justify-content-start md:mb-0 mb-3">
+          <img src="assets/images/blocks/footer/footer-2.png" alt="footer sections" width="50" height="50" class="mr-3">
+          <div class="text-gray-300 font-bold text-5xl">Bastion</div>
+        </div>
+        <div class="col-12 md:col-3">
+          <div class=" text-lg mb-4 flex flex-wrap" style="max-width: 290px">Jacob Obrechtstraat 5, 1071 KC
+            Amsterdam The Netherlands</div>
+          <div class=" mb-3"><i class="pi pi-phone surface-800 border-round p-1 mr-2"></i>(31) 20 779 8986
+          </div>
+          <div class=" mb-3"><i class="pi pi-inbox surface-800 border-round p-1 mr-2"></i>hello@bastion.co
+          </div>
+        </div>
+        <div class="col-12 md:col-3 text-gray-200">
+          <div class=" font-bold line-height-3 mb-3">Company</div>
+          <a class="line-height-3 block cursor-pointer mb-2">About Us</a>
+          <a class="line-height-3 block cursor-pointer mb-2">News</a>
+          <a class="line-height-3 block cursor-pointer mb-2">Investor Relations</a>
+          <a class="line-height-3 block cursor-pointer mb-2">Careers</a>
+          <a class="line-height-3 block cursor-pointer">Media Kit</a>
+        </div>
+        <div class="col-12 md:col-3 text-gray-200">
+          <div class=" font-bold line-height-3 mb-3">Resourses</div>
+          <a class="line-height-3 block cursor-pointer mb-2">Get Started</a>
+          <a class="line-height-3 block cursor-pointer mb-2">Learn</a>
+          <a class="line-height-3 block cursor-pointer">Case Studies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
