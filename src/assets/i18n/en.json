@@ -149,6 +149,20 @@
         "roadmap-graduate-title": "Graduate",
         "roadmap-graduate-description": "Graduated in Computer Science",
         "roadmap-specialist-title": "Specializing",
-        "roadmap-specialist-description": "Currently specializing in Distributed Software Architecture"
+        "roadmap-specialist-description": "Currently specializing in Distributed Software Architecture",
+
+        "certification-detail": "Detail",
+        "certification-aa-title": "RPA",
+        "certification-aa-subtitle": "Automation Anywhere certification",
+        "certification-aa-description": "Automation Anywhere V11 Professional Certification",
+        "certification-degree-title": "University Degree",
+        "certification-degree-subtitle": "Computer Science University Degree",
+        "certification-degree-description": "Higher education in Computer Science",
+        "certification-techday-title": "Job Recognition",
+        "certification-techday-subtitle": "Techday event winner at Ipiranga",
+        "certification-techday-description": "Winner with my team of the first Techday, recognition event for IT professionals at Ipiranga",
+
+        "contact-title": "Come closer!",
+        "contact-description": "I regularly post something interesting on LinkedIn or Instagram, if you want to follow or contact me, feel free!"
     }
 }

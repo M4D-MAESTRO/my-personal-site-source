@@ -1,0 +1,26 @@
+[
+    {
+        "title": "home.certification-aa-title",
+        "subtitle": "home.certification-aa-subtitle",
+        "description": "home.certification-aa-description",
+        "img": "assets/imgs/certificacoes/aa.png",
+        "issue_date": "2020-03-09",
+        "external_link": "https://drive.google.com/file/d/1f7ZSrySZxGBUU_a26JQ5jPtR-zYn7AIC/view"
+    },
+    {
+        "title": "home.certification-degree-title",
+        "subtitle": "home.certification-degree-subtitle",
+        "description": "home.certification-degree-description",
+        "img": "assets/imgs/certificacoes/diploma.jpeg",
+        "issue_date": "2021-06-01",
+        "external_link": "https://drive.google.com/file/d/1lfWfy41iiqsOxRpZZ9963d_5g-Aamv4y/view"
+    },
+    {
+        "title": "home.certification-techday-title",
+        "subtitle": "home.certification-techday-subtitle",
+        "description": "home.certification-techday-description",
+        "img": "assets/imgs/certificacoes/techday.jpeg",
+        "issue_date": "2021-11-09",
+        "external_link": "https://drive.google.com/file/d/11g3IdbROa9pVl6RRXDFO1lOwWx7PBkGr/view"
+    }
+]

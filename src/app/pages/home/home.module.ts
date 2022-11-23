@@ -14,6 +14,8 @@ import { PaginatorModule } from 'primeng/paginator';
 import { AvatarModule } from 'primeng/avatar';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { StyleClassModule } from 'primeng/styleclass';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -28,6 +30,8 @@ import { PipeModule } from 'src/app/shared/pipes/pipe.module';
     IonicModule,
     ButtonModule,
     RippleModule,
+    InputTextModule,
+    InputTextareaModule,
     ToastModule,
     AvatarModule,
     InputSwitchModule,

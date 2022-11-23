@@ -118,7 +118,7 @@
         "auth-title": "Autenticação e Autorização",
         "auth-description": "Técnicas de Autenticação e Autorização com Spring Security, JWT e NestJS Passport",
         "design-pattern-title": "Design Pattern",
-        "design-pattern-description": "Knowledge in MVC and DDD",
+        "design-pattern-description": "Conhecimento em MVC e DDD",
         "background-jobs-title": "Background Jobs",
         "background-jobs-description": "Utilizando NestJS e Bull",
         "scheduled-task-title": "Tarefas agendadas",
@@ -137,11 +137,9 @@
         "rpa-description": "Profissional certificado com Automation Anywhere",
         "agile-title": "Metodologia ágil",
         "agile-description": "Conhecimento em metodologia ágil com Kaban e Scrumban",
-
         "enpower-banner-title": "Emponderando o negócio de forma customizada",
         "enpower-banner-subtitle": "Foco em agregar valor",
         "enpower-banner-button": "Dar uma espiada",
-        
         "roadmap-about-title": "Um pouco mais sobre mim",
         "roadmap-about-description": "Sigo estudando e me aperfeiçoando com o objetivo de me tornar um especialista e futuramente também um professor de graduação",
         "roadmap-experience-title": "Experiência",
@@ -149,6 +147,20 @@
         "roadmap-graduate-title": "Graduado",
         "roadmap-graduate-description": "Formado em ciência da computação",
         "roadmap-specialist-title": "Especializando",
-        "roadmap-specialist-description": "Atuamente se especializando em Arquitetura de Software Distribuído"
+        "roadmap-specialist-description": "Atuamente se especializando em Arquitetura de Software Distribuído",
+
+        "certification-detail": "Abrir",
+        "certification-aa-title": "RPA",
+        "certification-aa-subtitle": "Certificado Automation Anywhere",
+        "certification-aa-description": "Certificação profissional do Automation Anywhere V11",
+        "certification-degree-title": "Diploma",
+        "certification-degree-subtitle": "Graudado em Ciência da Computação",
+        "certification-degree-description": "Ensino superior completo em Ciência da Computação",
+        "certification-techday-title": "Reconhecimentos",
+        "certification-techday-subtitle": "Vencedor do evento Techday na Ipiranga",
+        "certification-techday-description": "Vencedor junto à minha equipe do primeiro Techday, evento de reconhecimento dos profissionais de T.I da Ipiranga",
+
+        "contact-title": "Chega mais!",
+        "contact-description": "Regularmente posto algo interessante no LinkedIn ou no Instagram, se quiser me seguir ou me contactar, sinta-se a vontade!"
     }
 }

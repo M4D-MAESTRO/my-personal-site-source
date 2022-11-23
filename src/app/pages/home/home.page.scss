@@ -5,3 +5,12 @@ ion-button {
     word-break: break-all;
 }
 
+.crop {
+    height: 250px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 500px;
+    margin: 0px 0px 0px 0px;
+}
