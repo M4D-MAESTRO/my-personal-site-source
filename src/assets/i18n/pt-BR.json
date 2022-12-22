@@ -101,6 +101,7 @@
         "menu-preferences": "Preferências"
     },
     "home": {
+        "main-title": "Home",
         "title-welcome": "Seja bem-vindo",
         "title-description": "Me chamo Luís Henrique, e sou desenvolvedor Fullstack. Trabalho com Ionic, Angular, Java e NodeJS construindo Rest APIs, aplicações web e mobile. Também trabalho e sou certificado em RPA",
         "subtitle-welcome": "ao meu espaço",
@@ -154,13 +155,22 @@
         "certification-aa-subtitle": "Certificado Automation Anywhere",
         "certification-aa-description": "Certificação profissional do Automation Anywhere V11",
         "certification-degree-title": "Diploma",
-        "certification-degree-subtitle": "Graudado em Ciência da Computação",
+        "certification-degree-subtitle": "Graduado em Ciência da Computação",
         "certification-degree-description": "Ensino superior completo em Ciência da Computação",
         "certification-techday-title": "Reconhecimentos",
         "certification-techday-subtitle": "Vencedor do evento Techday na Ipiranga",
         "certification-techday-description": "Vencedor junto à minha equipe do primeiro Techday, evento de reconhecimento dos profissionais de T.I da Ipiranga",
 
         "contact-title": "Chega mais!",
-        "contact-description": "Regularmente posto algo interessante no LinkedIn ou no Instagram, se quiser me seguir ou me contactar, sinta-se a vontade!"
+        "contact-description": "Regularmente posto algo interessante no LinkedIn ou no Instagram, se quiser me seguir ou me contactar, sinta-se a vontade!",
+        "contact-firstname": "Nome",
+        "contact-lastname": "Sobrenome",
+        "contact-email": "E-mail",
+        "contact-phone": "Telefone/WhatsApp",
+        "contact-message": "Mensagem",
+        "contact-submit-button": "Enviar"
+    },
+    "application": {
+        "main-title": "Aplicações"
     }
 }

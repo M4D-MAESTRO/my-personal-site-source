@@ -135,11 +135,13 @@
         <div class=" text-2xl font-medium mb-6 text-white">{{ 'home.contact-title' | translate}}</div>
         <div class="text-gray-300 line-height-3 mb-6">{{ 'home.contact-description' | translate}} </div>
         <ul class="list-none p-0 m-0 mt-6 ">
-          <li class="flex align-items-center mb-2 cursor-pointer text-white">
-            <i class="pi pi-phone mr-2"></i>
+          <li class="flex align-items-center mb-2 cursor-pointer text-white"
+            (click)="openLink('https://wa.me/5521972528990')">
+            <i class="pi pi-whatsapp mr-2"></i>
             <span>+55 (21) 97252-8990</span>
           </li>
-          <li class="flex align-items-center mb-4 text-white">
+          <li class="flex align-items-center cursor-pointer mb-4 text-white"
+          (click)="openLink('mailto:lhccorrea@hotmail.com')">
             <i class="pi pi-inbox mr-2"></i>
             <span>lhccorrea@hotmail.com</span>
           </li>
@@ -147,44 +149,49 @@
             (click)="openLink('https://www.linkedin.com/in/henriquedecastro-dev/')">
             <i class="pi pi-linkedin mr-2"></i>
             <span>@henriquedecastro-dev</span>
-            <i class="pi pi-external-link ml-2 text-xs"></i>
           </li>
           <li class="flex align-items-center mb-2 cursor-pointer text-white"
             (click)="openLink('https://www.instagram.com/henriquedecastro.dev/')">
             <i class="pi pi-instagram mr-2"></i>
             <span>@henriquedecastro.dev</span>
-            <i class="pi pi-external-link ml-2 text-xs"></i>
           </li>
-          <li class="flex align-items-center mb-2 cursor-pointer text-white" (click)="openLink('https://github.com/M4D-MAESTRO')">
+          <li class="flex align-items-center mb-2 cursor-pointer text-white"
+            (click)="openLink('https://github.com/M4D-MAESTRO')">
             <i class="pi pi-github mr-2"></i>
             <span>M4D-MAESTRO</span>
-            <i class="pi pi-external-link ml-2 text-xs"></i>
           </li>
         </ul>
       </div>
       <div class="col-12 md:col-6">
-        <div class="p-fluid formgrid grid px-4 py-8 md:px-6 lg:px-8">
-          <div class="field col-12 lg:col-6 p-float-label mb-4">
-            <input id="firstname" type="text" class="py-3 px-2 text-lg" pInputText placeholder="First Name">
+        <form action="mailto:lhccorrea@hotmail.com" method="post"
+        enctype="multipart/form-data" name="form">
+          <div class="p-fluid formgrid grid px-4 py-8 md:px-6 lg:px-8">
+            <div class="field col-12 lg:col-6 p-float-label mb-4">
+              <input id="firstname" type="text" class="py-3 px-2 text-lg" pInputText
+                [placeholder]="'home.contact-firstname' | translate">
+            </div>
+            <div class="field col-12 lg:col-6 p-float-label mb-4">
+              <input id="lastname" type="text" class="py-3 px-2 text-lg" pInputText
+                [placeholder]="'home.contact-lastname' | translate">
+            </div>
+            <div class="field col-12 mb-4">
+              <input id="phone" type="text" pInputText class="py-3 px-2 text-lg"
+                [placeholder]="'home.contact-phone' | translate">
+            </div>
+            <div class="field col-12 mb-4">
+              <input id="email" type="text" pInputText class="py-3 px-2 text-lg"
+                [placeholder]="'home.contact-email' | translate">
+            </div>
+            <div class="field col-12 mb-4">
+              <textarea id="message" pInputTextarea rows="5" [autoResize]="true" class="py-3 px-2 text-lg h-full"
+                [placeholder]="'home.contact-message' | translate"></textarea>
+            </div>
+            <div class="col-12 text-right">
+              <button type="submit  " pButton pRipple [label]="'home.contact-submit-button' | translate"
+                icon="pi pi-envelope" class="px-5 py-3 w-auto p-button-outlined" value="submit"></button>
+            </div>
           </div>
-          <div class="field col-12 lg:col-6 p-float-label mb-4">
-            <input id="lastname" type="text" class="py-3 px-2 text-lg" pInputText placeholder="Last Name">
-          </div>
-          <div class="field col-12 mb-4">
-            <input id="email" type="text" pInputText class="py-3 px-2 text-lg" placeholder="Email">
-          </div>
-          <div class="field col-12 mb-4">
-            <input id="email" type="text" pInputText class="py-3 px-2 text-lg" placeholder="Phone">
-          </div>
-          <div class="field col-12 mb-4">
-            <textarea id="message" pInputTextarea rows="3" [autoResize]="true" class="py-3 px-2 text-lg"
-              placeholder="Message"></textarea>
-          </div>
-          <div class="col-12 text-right">
-            <button type="button" pButton pRipple label="Submit" icon="pi pi-envelope"
-              class="px-5 py-3 w-auto"></button>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

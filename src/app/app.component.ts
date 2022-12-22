@@ -28,8 +28,9 @@ export class AppComponent implements OnInit {
   countries: any[];
 
   public appPages = [
-    { title: 'Home', url: '/home', icon: 'home' },
-  ];
+    { title: `'home.main-title' | translate`, url: '/home', icon: 'home' },
+    { title: `${this.translateService.instant('home.title-welcome')}`, url: '/applications', icon: 'app' },
+  ]; ;
 
   constructor(
     public readonly loaderService: LoaderService,
@@ -57,6 +58,7 @@ export class AppComponent implements OnInit {
       { name: 'Português', code: 'BR', language: 'pt-BR' },
       { name: 'English', code: 'US', language: 'en' }
     ];
+
   }
 
   ngAfterViewInit() {

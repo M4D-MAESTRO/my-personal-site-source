@@ -101,6 +101,7 @@
         "menu-preferences": "Preferences"
     },
     "home": {
+        "main-title": "Home",
         "title-welcome": "Welcome",
         "title-description": "My name is Luís Henrique, and I'm a Fullstack developer. I work with Ionic, Angular, Java and NodeJS building Rest APIs, web and mobile applications",
         "subtitle-welcome": "to my space",
@@ -163,6 +164,15 @@
         "certification-techday-description": "Winner with my team of the first Techday, recognition event for IT professionals at Ipiranga",
 
         "contact-title": "Come closer!",
-        "contact-description": "I regularly post something interesting on LinkedIn or Instagram, if you want to follow or contact me, feel free!"
+        "contact-description": "I regularly post something interesting on LinkedIn or Instagram, if you want to follow or contact me, feel free!",
+        "contact-firstname": "First name",
+        "contact-lastname": "Last name",
+        "contact-email": "E-mail",
+        "contact-phone": "Phone/WhatsApp",
+        "contact-message": "Message",
+        "contact-submit-button": "Submit"
+    },
+    "application": {
+        "main-title": "Applications"
     }
 }
