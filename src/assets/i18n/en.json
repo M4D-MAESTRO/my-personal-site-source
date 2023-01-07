@@ -98,7 +98,10 @@
     },
     "app": {
         "select-language": "Select your language",
-        "menu-preferences": "Preferences"
+        "menu-preferences": "Preferences",
+        "menu-subtitle": "Luís Henrique de C. Corrêa",
+        "menu-route-home": "Home",
+        "menu-route-apps": "Applications"
     },
     "home": {
         "main-title": "Home",
@@ -139,7 +142,7 @@
         "agile-title": "Agile methodology",
         "agile-description": "Knowledge in agile methodologies with Kaban and Scrumban",
         
-        "enpower-banner-title": "Empowering the business in a customized way",
+        "enpower-banner-title": "Some software I worked on",
         "enpower-banner-subtitle": "Focus on adding value",
         "enpower-banner-button": "Take a sneak",
 
@@ -152,6 +155,7 @@
         "roadmap-specialist-title": "Specializing",
         "roadmap-specialist-description": "Currently specializing in Distributed Software Architecture",
 
+        "certification-title": "Certificates & Awards",
         "certification-detail": "Detail",
         "certification-aa-title": "RPA",
         "certification-aa-subtitle": "Automation Anywhere certification",
@@ -173,6 +177,46 @@
         "contact-submit-button": "Submit"
     },
     "application": {
-        "main-title": "Applications"
+        "main-title":"Aplicativos & Sistemas",
+        "function-title":"Função",
+
+        "tech-java": "Java",
+        "tech-spring": "Springboot",
+        "tech-node": "NodeJS",
+        "tech-nest": "NestJS",
+        "tech-angular": "Angular",
+        "tech-ionic": "Ionic",
+        "tech-capacitor": "Capacitor",
+        "tech-primeng": "PrimeNG",
+
+        "sgl-title": "Lubricant Management System",
+        "sgl-description": "The system responsible for all management, simulation and sale of Iconic lubricants.",
+        "sgl-function": "Tech lead and Responsible",
+        "sgl-system_type": "Web/Desktop",
+
+        "pof-title": "Tax Obligations Portal",
+        "pof-description": "The Tax Portal starts with a vision of empowering the tax team to enable adjustments and generation of tax data.",
+        "pof-function": "Fullstack Developer",
+        "pof-system_type": "Web",
+
+        "ped-title": "Refund there",
+        "ped-description": "Application used by Ipiranga employees to request reimbursement and loan, as well as accountability for the requested loan.",
+        "ped-function": "Tech lead and Fullstack Developer",
+        "ped-system_type": "Web/Mobile/PWA",
+
+        "saa-title": "Auth-Gateway",
+        "saa-description": "API responsible for authentication and authorization for external use",
+        "saa-function": "Backend Developer",
+        "saa-system_type": "Web",
+
+        "gtl-title": "Lottery Transaction Management System",
+        "gtl-description": "Web and mobile system for monitoring and controlling lotteries and lottery transactions",
+        "gtl-function": "Fullstack Developer",
+        "gtl-system_type": "Web/Mobile/PWA",
+
+        "dls-title": "Dark Lion Solution",
+        "dls-description": "Micro-enterprise solution for small and medium-sized companies, focused on managerial and operational control of the business.",
+        "dls-function": "Fullstack Developer",
+        "dls-system_type": "Web/Mobile/PWA"
     }
 }

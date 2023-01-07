@@ -28,8 +28,8 @@ export class AppComponent implements OnInit {
   countries: any[];
 
   public appPages = [
-    { title: `'home.main-title' | translate`, url: '/home', icon: 'home' },
-    { title: `${this.translateService.instant('home.title-welcome')}`, url: '/applications', icon: 'app' },
+    { title: `app.menu-route-home`, url: '/home', icon: 'home' },
+    { title: `app.menu-route-apps`, url: '/applications', icon: 'apps' },
   ]; ;
 
   constructor(

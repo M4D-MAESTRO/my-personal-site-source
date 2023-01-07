@@ -1,0 +1,173 @@
+[
+    {
+        "title": "application.sgl-title",
+        "description": "application.sgl-description",
+        "function": "application.sgl-function",
+        "system_type": "application.sgl-system_type",
+        "cover": "",
+        "images": [
+            ""
+        ],
+        "techs": [
+            {
+                "name": "application.tech-java",
+                "color": "orange"
+            }
+        ]
+    },
+    {
+        "title": "application.pof-title",
+        "description": "application.pof-description",
+        "function": "application.pof-function",
+        "system_type": "application.pof-system_type",
+        "cover": "",
+        "images": [
+            ""
+        ],
+        "techs": [
+            {
+                "name": "application.tech-java",
+                "color": "orange"
+            },
+            {
+                "name": "application.tech-spring",
+                "color": "green"
+            },
+            {
+                "name": "application.tech-angular",
+                "color": "red"
+            }
+        ]
+    },
+    {
+        "title": "application.ped-title",
+        "description": "application.ped-description",
+        "function": "application.ped-function",
+        "system_type": "application.ped-system_type",
+        "cover": "",
+        "images": [
+            ""
+        ],
+        "techs": [
+            {
+                "name": "application.tech-node",
+                "color": "green"
+            },
+            {
+                "name": "application.tech-angular",
+                "color": "red"
+            },
+            {
+                "name": "application.tech-primeng",
+                "color": "red"
+            },
+            {
+                "name": "application.tech-ionic",
+                "color": "blue"
+            },
+            {
+                "name": "application.tech-capacitor",
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "title": "application.saa-title",
+        "description": "application.saa-description",
+        "function": "application.saa-function",
+        "system_type": "application.saa-system_type",
+        "cover": "",
+        "images": [
+            ""
+        ],
+        "techs": [
+            {
+                "name": "application.tech-node",
+                "color": "green"
+            }
+        ]
+    },
+    {
+        "title": "application.gtl-title",
+        "description": "application.gtl-description",
+        "function": "application.gtl-function",
+        "system_type": "application.gtl-system_type",
+        "cover": "assets/imgs/apps/gtl.png",
+        "images": [
+            "assets/imgs/apps/gtl/1.png",
+            "assets/imgs/apps/gtl/2.png",
+            "assets/imgs/apps/gtl/3.png",
+            "assets/imgs/apps/gtl/4.png"
+        ],
+        "techs": [
+            {
+                "name": "application.tech-node",
+                "color": "green"
+            },
+            {
+                "name": "application.tech-angular",
+                "color": "red"
+            },
+            {
+                "name": "application.tech-primeng",
+                "color": "red"
+            },
+            {
+                "name": "application.tech-ionic",
+                "color": "blue"
+            },
+            {
+                "name": "application.tech-capacitor",
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "title": "application.dls-title",
+        "description": "application.dls-description",
+        "function": "application.dls-function",
+        "system_type": "application.dls-system_type",
+        "cover": "assets/imgs/apps/dark-lion.png",
+        "images": [
+            "assets/imgs/apps/dark-lion/1.png",
+            "assets/imgs/apps/dark-lion/2.png",
+            "assets/imgs/apps/dark-lion/3.png",
+            "assets/imgs/apps/dark-lion/4.png",
+            "assets/imgs/apps/dark-lion/5.png",
+            "assets/imgs/apps/dark-lion/6.png",
+            "assets/imgs/apps/dark-lion/7.png",
+            "assets/imgs/apps/dark-lion/8.png",
+            "assets/imgs/apps/dark-lion/9.png",
+            "assets/imgs/apps/dark-lion/10.png",
+            "assets/imgs/apps/dark-lion/11.png",
+            "assets/imgs/apps/dark-lion/12.png",
+            "assets/imgs/apps/dark-lion/13.png",
+            "assets/imgs/apps/dark-lion/14.png",
+            "assets/imgs/apps/dark-lion/15.png",
+            "assets/imgs/apps/dark-lion/16.png",
+            "assets/imgs/apps/dark-lion/17.png"
+        ],
+        "techs": [
+            {
+                "name": "application.tech-nest",
+                "color": "red"
+            },
+            {
+                "name": "application.tech-angular",
+                "color": "red"
+            },
+            {
+                "name": "application.tech-primeng",
+                "color": "red"
+            },
+            {
+                "name": "application.tech-ionic",
+                "color": "blue"
+            },
+            {
+                "name": "application.tech-capacitor",
+                "color": "blue"
+            }
+        ]
+    }
+]

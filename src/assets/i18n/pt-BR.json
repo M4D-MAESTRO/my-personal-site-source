@@ -98,7 +98,10 @@
     },
     "app": {
         "select-language": "Selecione seu idioma",
-        "menu-preferences": "Preferências"
+        "menu-preferences": "Preferências",
+        "menu-subtitle": "Luís Henrique de C. Corrêa",
+        "menu-route-home": "Home",
+        "menu-route-apps": "Aplicações"
     },
     "home": {
         "main-title": "Home",
@@ -138,7 +141,7 @@
         "rpa-description": "Profissional certificado com Automation Anywhere",
         "agile-title": "Metodologia ágil",
         "agile-description": "Conhecimento em metodologia ágil com Kaban e Scrumban",
-        "enpower-banner-title": "Emponderando o negócio de forma customizada",
+        "enpower-banner-title": "Alguns sistemas em que trabalhei",
         "enpower-banner-subtitle": "Foco em agregar valor",
         "enpower-banner-button": "Dar uma espiada",
         "roadmap-about-title": "Um pouco mais sobre mim",
@@ -149,7 +152,7 @@
         "roadmap-graduate-description": "Formado em ciência da computação",
         "roadmap-specialist-title": "Especializando",
         "roadmap-specialist-description": "Atuamente se especializando em Arquitetura de Software Distribuído",
-
+        "certification-title": "Certificados & Prêmios",
         "certification-detail": "Abrir",
         "certification-aa-title": "RPA",
         "certification-aa-subtitle": "Certificado Automation Anywhere",
@@ -160,7 +163,6 @@
         "certification-techday-title": "Reconhecimentos",
         "certification-techday-subtitle": "Vencedor do evento Techday na Ipiranga",
         "certification-techday-description": "Vencedor junto à minha equipe do primeiro Techday, evento de reconhecimento dos profissionais de T.I da Ipiranga",
-
         "contact-title": "Chega mais!",
         "contact-description": "Regularmente posto algo interessante no LinkedIn ou no Instagram, se quiser me seguir ou me contactar, sinta-se a vontade!",
         "contact-firstname": "Nome",
@@ -171,6 +173,46 @@
         "contact-submit-button": "Enviar"
     },
     "application": {
-        "main-title": "Aplicações"
+        "main-title":"Aplicativos & Sistemas",
+        "function-title":"Função",
+
+        "tech-java": "Java",
+        "tech-spring": "Springboot",
+        "tech-node": "NodeJS",
+        "tech-nest": "NestJS",
+        "tech-angular": "Angular",
+        "tech-ionic": "Ionic",
+        "tech-capacitor": "Capacitor",
+        "tech-primeng": "PrimeNG",
+
+        "sgl-title": "Sistema de Gestão de Lubrificantes",
+        "sgl-description": "O sistema responsável por toda a gestão, simulação e venda de lubrificantes da Iconic.",
+        "sgl-function": "Tech lead e Responsável",
+        "sgl-system_type": "Web/Desktop",
+
+        "pof-title": "Portal de Obrigações Fiscais",
+        "pof-description": "O Portal Fiscal parte com uma visão de emponderar a equipe de tributas para possibilitar ajustes e geração de dados fiscais.",
+        "pof-function": "Desenvolvedor Fullstack",
+        "pof-system_type": "Web",
+
+        "ped-title": "Reembolsa Aí",
+        "ped-description": "Aplicativo usado pelos colaboradores da Ipiranga para solicitar reembolso e adiantamento, bem como prestação de contas do adiantamento solicitado.",
+        "ped-function": "Tech lead e Desenvolvedor Fullstack",
+        "ped-system_type": "Web/Mobile/PWA",
+
+        "saa-title": "Auth-Gateway",
+        "saa-description": "API responsável pela autenticação e autorização de uso externo",
+        "saa-function": "Desenvolvedor backend",
+        "saa-system_type": "Web",
+
+        "gtl-title": "Sistema de Gestão de Transação Lotéricas",
+        "gtl-description": "Sistema web e mobile para monitoramento e controle de loterias e transações lotéricas",
+        "gtl-function": "Desenvolvedor Fullstack",
+        "gtl-system_type": "Web/Mobile/PWA",
+
+        "dls-title": "Dark Lion Solution",
+        "dls-description": "Solução micro-empreendedora para pequenas e médias empresas, com foco em controle gerencial e operacional do negócio.",
+        "dls-function": "Desenvolvedor Fullstack",
+        "dls-system_type": "Web/Mobile/PWA"
     }
 }

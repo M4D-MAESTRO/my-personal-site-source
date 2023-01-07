@@ -3,22 +3,18 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Home</ion-title>
+    <ion-title>{{ 'app.menu-route-home' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content appScrollTheme>
 
-
-  <div id="top" class="grid grid-nogutter surface-section text-800">
+  <div id="top" class="grid grid-nogutter surface-section text-800 border-bottom-1 pb-2">
     <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
       <section>
         <span class="block text-6xl font-bold mb-1">{{ 'home.title-welcome' | translate }}!</span>
         <div class="text-6xl text-primary font-bold mb-3">{{ 'home.subtitle-welcome' | translate }}.</div>
         <p class="mt-0 mb-4 text-700 line-height-3">{{ 'home.title-description' | translate }}.</p>
-
-        <button pButton pRipple label="Learn More" type="button" class="mr-3 p-button-raised text-white"></button>
-        <button pButton pRipple label="Live Demo" type="button" class="p-button-outlined"></button>
       </section>
     </div>
     <div class="col-12 md:col-6 overflow-hidden">
@@ -27,7 +23,7 @@
     </div>
   </div>
 
-  <div id="skills" class="surface-section px-4 py-8 md:px-6 lg:px-8">
+  <div id="skills" class="surface-section px-4 py-8 md:px-6 lg:px-8 ">
     <div class="text-center">
       <div class="mb-3 font-bold text-4xl">
         <span class="text-900">{{ 'home.develop-primary' | translate }}, </span>
@@ -47,7 +43,7 @@
     </div>
   </div>
 
-  <div id="enpower" class="surface-section px-4 pb-8 md:px-6 lg:px-8">
+  <div id="enpower" class="surface-section px-4 pb-8 md:px-6 lg:px-8 border-bottom-1">
     <div class="p-6 shadow-2 flex flex-column md:flex-row align-items-center justify-content-between"
       style="border-radius: 1rem; background: linear-gradient(0deg, var(--gradient-begin), var(--gradient-middle)), linear-gradient(92.54deg, var(--gradient-ending) 47.88%, #FFFFFF 100.01%)">
       <div class="pr-6">
@@ -56,12 +52,13 @@
       </div>
       <div class="mt-4 mr-auto md:mt-0 md:mr-0">
         <button pButton pRipple label="{{ 'home.enpower-banner-button' | translate }}"
-          class="spy-btn font-bold px-5 py-3 p-button-secondary p-button-rounded  surface-0 text-900 white-space-nowrap"></button>
+          class="spy-btn font-bold px-5 py-3 p-button-secondary p-button-rounded 
+          surface-0 text-900 white-space-nowrap" (click)="navigate('applications')"></button>
       </div>
     </div>
   </div>
 
-  <div id="roadmap" class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+  <div id="roadmap" class="surface-ground px-4 py-8 md:px-6 lg:px-8 border-bottom-1">
     <div>
       <div class="text-900 font-bold text-4xl line-height-3 mb-3 text-center">{{ 'home.roadmap-about-title' | translate
         }}</div>
@@ -91,9 +88,9 @@
     </div>
   </div>
 
-  <div id="certifications" class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+  <div id="certifications" class="surface-ground px-4 py-8 md:px-6 lg:px-8 border-bottom-1">
     <div>
-      <div class="font-bold text-4xl text-900 mb-5 text-center">Featured Articles</div>
+      <div class="font-bold text-4xl text-900 mb-5 text-center">{{ 'home.certification-title' | translate}}</div>
       <div class="grid nogutter">
         <div *ngFor="let c of certifications" class="col-12 lg:col-4 p-3">
           <div class="shadow-2 border-round h-full surface-card">
@@ -128,9 +125,9 @@
     </div>
   </div>
 
-  <div id="contact" class="surface-ground ">
-    <div class="grid grid-nogutter mx-2 mb-1">
-      <div class="col-12 md:col-6 bg-no-repeat bg-cover p-8"
+  <div id="contact" class="surface-ground pt-2">
+    <div class="grid grid-nogutter ">
+      <div class="col-12 bg-no-repeat bg-cover p-8"
         style="background-image: url('assets/imgs/outros/talking to me.png')">
         <div class=" text-2xl font-medium mb-6 text-white">{{ 'home.contact-title' | translate}}</div>
         <div class="text-gray-300 line-height-3 mb-6">{{ 'home.contact-description' | translate}} </div>
@@ -162,37 +159,8 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 md:col-6">
-        <form action="mailto:lhccorrea@hotmail.com" method="post"
-        enctype="multipart/form-data" name="form">
-          <div class="p-fluid formgrid grid px-4 py-8 md:px-6 lg:px-8">
-            <div class="field col-12 lg:col-6 p-float-label mb-4">
-              <input id="firstname" type="text" class="py-3 px-2 text-lg" pInputText
-                [placeholder]="'home.contact-firstname' | translate">
-            </div>
-            <div class="field col-12 lg:col-6 p-float-label mb-4">
-              <input id="lastname" type="text" class="py-3 px-2 text-lg" pInputText
-                [placeholder]="'home.contact-lastname' | translate">
-            </div>
-            <div class="field col-12 mb-4">
-              <input id="phone" type="text" pInputText class="py-3 px-2 text-lg"
-                [placeholder]="'home.contact-phone' | translate">
-            </div>
-            <div class="field col-12 mb-4">
-              <input id="email" type="text" pInputText class="py-3 px-2 text-lg"
-                [placeholder]="'home.contact-email' | translate">
-            </div>
-            <div class="field col-12 mb-4">
-              <textarea id="message" pInputTextarea rows="5" [autoResize]="true" class="py-3 px-2 text-lg h-full"
-                [placeholder]="'home.contact-message' | translate"></textarea>
-            </div>
-            <div class="col-12 text-right">
-              <button type="submit  " pButton pRipple [label]="'home.contact-submit-button' | translate"
-                icon="pi pi-envelope" class="px-5 py-3 w-auto p-button-outlined" value="submit"></button>
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
   </div>
+
+
 </ion-content>

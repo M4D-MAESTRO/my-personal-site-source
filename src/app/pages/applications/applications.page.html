@@ -1,9 +1,64 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>applications</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ 'app.menu-route-apps' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content appScrollTheme>
 
+  <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+    <div class="text-center text-900 text-5xl font-bold mb-5">{{ 'application.main-title' | translate }}</div>
+    <div class="grid grid-nogutter">
+      <div *ngFor="let a of apps" class="col-12 lg:col-4 p-3">
+        <div class="p-3 shadow-2 border-round surface-card">
+          <div class="flex justify-content-between text-500">
+            <span>{{ a.title | translate }}</span>
+          </div>
+          <p class="line-height-3 mt-3  text-900 font-medium text-xl">
+            {{ a.description | translate }}
+          </p>
+          <div class="line-height-3 mt-3 mb-7 text-900 font-medium text-lg">
+            <span class="text-yellow-800">{{ 'application.function-title' | translate }}: </span>
+            <span>
+              {{ a.function | translate }}
+            </span>
+          </div>
+          <span *ngFor="let t of a.techs" class=" font-medium py-1 px-3 mr-3 mt-2 inline-block"
+            style="border-radius: 30px;" [ngClass]="{
+            'green' : 'text-green-500 bg-green-100', 
+          'blue' : 'text-blue-500 bg-blue-100', 
+          'red' : 'text-pink-500 bg-pink-100', 
+          'orange' : 'text-orange-500 bg-orange-100'
+        }[t.color]">{{
+            t.name | translate }}</span>
+          <div *ngIf="a.cover">
+            <img [src]="a.cover" alt="Image" (click)="showImgs(a)"
+              class="block w-full mt-5 border-top-1 pt-3 cursor-pointer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <p-dialog [(visible)]="showDialog" appendTo="body" [modal]="true" [draggable]="false"
+   [style]="{width: '100%', height: '100%'}" (onHide)="closeDialog()">
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center">
+        <div class="text-900 font-medium mb-3 text-xl">{{ appName | translate }}</div>
+      </div>
+    </ng-template>
+    <p-galleria [(value)]="appImages" 
+        [showThumbnails]="false" [showIndicators]="true">
+        <ng-template pTemplate="item" let-item>
+          <div class="justify-content-center overflow-hidden text-center">
+            <p-image style="margin: auto;" [src]="item" class=" block" 
+             [preview]="true" width="70%" height="70%"></p-image>
+          </div>
+        </ng-template>
+      </p-galleria>
+  </p-dialog>
 </ion-content>

@@ -70,5 +70,8 @@ export class HomePage implements OnInit, OnDestroy {
     });
   }
 
+  navigate(url: string){
+    this.route.navigateByUrl(url);
+  }
 
 }

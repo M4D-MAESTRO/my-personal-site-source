@@ -1,3 +1,5 @@
+import { AplicacaoDto } from './../../shared/interfaces/aplicacoes/aplicacao.dto';
+import { ApplicationsService } from './../../shared/services/mocks/applications/applications.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./applications.page.scss'],
 })
 export class ApplicationsPage implements OnInit {
+  apps: AplicacaoDto[];
+  appImages: string[];
+  appName = '';
 
-  constructor() { }
+  showDialog = false;
+
+  constructor(
+    private readonly applicationsService: ApplicationsService,
+  ) { }
 
   ngOnInit() {
+    this.loadApps();
   }
+
+  loadApps() {
+    this.applicationsService.list()
+      .subscribe(data => {
+        this.apps = data;
+      })
+  }
+
+  showImgs(app: AplicacaoDto) {
+    this.appImages = app.images;
+    this.appName = app.title;
+    this.showDialog = true;
+  }
+
+  closeDialog() {
+    this.appImages = undefined;
+    this.appName = undefined;
+    this.showDialog = false;
+  }
+
 
 }

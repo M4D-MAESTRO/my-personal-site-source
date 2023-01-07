@@ -21,7 +21,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { DirectivesModule } from '../../shared/directive/directives.module';
-import { PipeModule } from 'src/app/shared/pipes/pipe.module';
+import { PipeModule } from '../../shared/pipes/pipe.module';
 
 @NgModule({
   imports: [
